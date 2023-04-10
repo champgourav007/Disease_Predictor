@@ -1,5 +1,6 @@
 import os
 import requests
+from healthX.settings import RAPID_API_KEY
 
 
 def ask_chatgpt(content_type, disease_name):
@@ -16,7 +17,7 @@ def ask_chatgpt(content_type, disease_name):
   }
   headers = {
     "content-type": "application/json",
-    "X-RapidAPI-Key": "4016f28790msh0a52f90c47aeecep118ffcjsn0789f5ae976d",
+    "X-RapidAPI-Key": RAPID_API_KEY,
     "X-RapidAPI-Host": "openai80.p.rapidapi.com"
   }
 
